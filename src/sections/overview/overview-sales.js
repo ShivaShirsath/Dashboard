@@ -111,20 +111,21 @@ export const OverviewSales = (props) => {
   return (
     <Card sx={sx}>
       <CardHeader
-        action={(
-          <Button
-            color="inherit"
-            size="small"
-            startIcon={(
-              <SvgIcon fontSize="small">
-                <ArrowPathIcon />
-              </SvgIcon>
-            )}
-          >
-            Sync
-          </Button>
-        )}
-        title="Sales"
+        // action={(
+          // <Button
+          //   color="inherit"
+          //   size="small"
+          //   startIcon={(
+          //     <SvgIcon fontSize="small">
+          //       <ArrowPathIcon />
+          //     </SvgIcon>
+          //   )}
+          // >
+          //   Sync
+          // </Button>
+        // )}
+        title="Overview"
+        subheader="Monthly Earnings"
       />
       <CardContent>
         <Chart

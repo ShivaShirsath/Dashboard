@@ -15,31 +15,28 @@ export const OverviewTotalCustomers = (props) => {
           direction="row"
           justifyContent="space-between"
           spacing={3}
-        >
+        > <Avatar
+        sx={{
+          backgroundColor: 'success.main',
+          height: 100,
+          width: 100
+        }}
+      >
+           <SvgIcon>
+              <UsersIcon />
+            </SvgIcon>
+          </Avatar>
           <Stack spacing={1}>
             <Typography
               color="text.secondary"
               variant="overline"
             >
-              Total Customers
+              Orders
             </Typography>
             <Typography variant="h4">
               {value}
             </Typography>
-          </Stack>
-          <Avatar
-            sx={{
-              backgroundColor: 'success.main',
-              height: 56,
-              width: 56
-            }}
-          >
-            <SvgIcon>
-              <UsersIcon />
-            </SvgIcon>
-          </Avatar>
-        </Stack>
-        {difference && (
+            {difference && (
           <Stack
             alignItems="center"
             direction="row"
@@ -68,10 +65,15 @@ export const OverviewTotalCustomers = (props) => {
               color="text.secondary"
               variant="caption"
             >
-              Since last month
+              this month
             </Typography>
           </Stack>
         )}
+          </Stack>
+         
+           
+        </Stack>
+        
       </CardContent>
     </Card>
   );

@@ -38,10 +38,10 @@ const Page = () => (
             lg={3}
           >
             <OverviewBudget
-              difference={12}
+              difference={37.8}
               positive
               sx={{ height: '100%' }}
-              value="$24k"
+              value="$198k"
             />
           </Grid>
           <Grid
@@ -50,10 +50,10 @@ const Page = () => (
             lg={3}
           >
             <OverviewTotalCustomers
-              difference={16}
+              difference={2}
               positive={false}
               sx={{ height: '100%' }}
-              value="1.6k"
+              value="2.4k"
             />
           </Grid>
           <Grid
@@ -61,9 +61,15 @@ const Page = () => (
             sm={6}
             lg={3}
           >
-            <OverviewTasksProgress
+            {/* <OverviewTasksProgress
               sx={{ height: '100%' }}
               value={75.5}
+            /> */}
+            <OverviewTotalCustomers
+              difference={2}
+              positive={false}
+              sx={{ height: '100%' }}
+              value="2.4k"
             />
           </Grid>
           <Grid
@@ -73,7 +79,9 @@ const Page = () => (
           >
             <OverviewTotalProfit
               sx={{ height: '100%' }}
-              value="$15k"
+              value="$89k"
+              difference={11}
+              positive={true}
             />
           </Grid>
           <Grid
